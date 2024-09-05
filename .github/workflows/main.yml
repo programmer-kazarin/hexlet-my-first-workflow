@@ -15,9 +15,6 @@ jobs:
       # run – произвольная bash-команда
       - run: make say-hello
       - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: 'npm' # ускоряет повторные сборки
       - run: npm ci
       - run: npm test
       - name: Print Hello from Hexlet
